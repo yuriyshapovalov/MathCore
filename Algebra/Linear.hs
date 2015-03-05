@@ -2,4 +2,10 @@
 
 module Linear where
 
-type Vector = [a] 
+data Vector = [Int]
+data Matrix = [Vector]
+
+class Linear where
+
+    sumVectors :: Vector -> Vector -> Vector
+    sumVectors = undefined
